@@ -1,0 +1,52 @@
+[
+    {
+        "Product Name": "Apple iPhone 15 Pro",
+        "Product Price": 450000,
+        "Product category": "Phones",
+        "Product Image": "pictures/iphone.webp"
+    },
+    {
+        "Product Name": "Tecno Pop 9",
+        "Product Price": 90000,
+        "Product category": "Phones",
+        "Product Image": "pictures/nokia.webp"
+    },
+    {
+        "Product Name": "Itel 2176",
+        "Product Price": 450000,
+        "Product category": "Phones",
+        "Product Image": "pictures/itel.webp"
+    },
+    {
+        "Product Name": "Samsung Galaxy A05",
+        "Product Price": 950000,
+        "Product category": "Phones",
+        "Product Image": "pictures/itel.webp"
+    },
+    {
+        "Product Name": "Tecno Spark 30c",
+        "Product Price": 180000,
+        "Product category": "Phones",
+        "Product Image": "pictures/itel.webp"
+    },
+    {
+        "Product Name": "Xiaomi Redmi 13",
+        "Product Price": 550000,
+        "Product category": "Phones",
+        "Product Image": "pictures/itelA50.webp"
+    },
+    {
+        "Product Name": "ZTE Zte Blade A55",
+        "Product Price": 890000,
+        "Product category": "Phones"
+        ,"Product Image": "pictures/xiame.webp"
+    },
+    {
+        "Product Name": "Note 50",
+        "Product Price": 450000,
+        "Product category": "Phones",
+        "Product Image": "pictures/xiameredmi.webp"
+    }
+
+]
+

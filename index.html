@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tobi Konga</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="pictures/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Nav-bar section starts here -->
+    <section id="nav-section">
+        <!-- first nav section start here -->
+        <nav>
+            <img src="pictures/logo.svg" alt="" class="myLogo">
+            <div id="store">
+                <p>Store Locator</p>
+            </div>
+            <div id="sell">
+                <p>Sell on Konga</p>
+            </div>
+            <div id="input">
+                <input type="text" placeholder="Search for products, brands and Categories..." class="place">
+                <img src="pictures/searchIcon.webp" alt="">
+            </div>
+            <div id="help">
+                <img src="pictures/help.png" alt="">
+                <p>Help ></p>
+            </div>
+            <div id="login" style="padding: 10px;">
+                    <p>Login/Signup</p>
+            </div>
+            <div id="cart-container">
+                <div id="cart-box">
+                    <img src="pictures/cart.png" alt="">
+                    <p>My Cart</p>
+                    <span id="span">0</span>
+                </div>
+            </div>
+        </nav>
+        <!-- second nav section starts here -->
+        <section id="secondNav">
+            <div class="inner">
+                <img src="pictures/hamburger.png" alt="">
+                <p class="AllCat">All category</p>
+                <!-- wrapper for the dropdown on hover of All category -->
+                <div class="dropDown-wrapper">
+                    <div class="dropDown">
+                         <div class="items left">
+                             <p class="computers selected">Computers and Accessories</p>
+                             <p class="phones">Phones and Tablet</p>
+                             <p class="electronics">Electronics</p>
+                             <p class="fashion">Konga Fashion</p>
+                             <p class="kitchen">Home and Kitchen</p>
+                             <p class="toys">Baby, kids and Toys</p>
+                             <p class="health">Beauty, Health & Personal Care</p>
+                             <p class="drinks">Drinks and Groceries</p>
+                             <p class="other">Other Categories</p>
+                             <p class="other">Other Categories</p>
+                             <p class="other">Other Categories</p>
+                             <p class="other">Other Categories</p>
+                             <p class="other">Other Categories</p>
+                             <p class="other">Other Categories</p>
+                             <p class="other">Other Categories</p>
+                             <p class="other">Other Categories</p>
+                             <p class="other">Other Categories</p>
+                             <p class="other">Other Categories</p>
+                             <p class="other">Other Categories</p>
+                             <p class="other">Other Categories</p>
+                             <p class="other">Other Categories</p>
+                             <p class="other">Other Categories</p>
+                             <p class="other">Other Categories</p>
+                             <p class="other">Other Categories</p>
+                             <p class="other">Other Categories</p>
+                         </div>
+                         <div class="items right">
+                           <!-- <p>Lorem ipsum dolor sit </p> -->
+                         </div>
+                    </div>
+                 </div>
+            </div>
+            <div class="inner">
+                <p>Computer and Accessories</p>
+            </div>
+            
+            <div class="inner">
+                <p>Phones and tablets</p>
+            </div>
+            
+            <div class="inner">
+                <p>Electronics</p>
+            </div>
+            
+            <div class="inner">
+                <p>Konga fashion</p>
+            </div>
+            
+            <div class="inner">
+                <p>Home and Kitchen</p>
+            </div>
+            
+            <div class="inner">
+                <p>Baby, Kids and Toys</p>
+            </div>
+            
+            <div class="inner">
+                <p>Beauty, Health and Personal Care</p>
+            </div>
+        </section>
+    </section>
+    <!-- dropdown for signup -->
+    <div class="drop-down-wrapper" id="drop">
+        
+        <div class="drop-down-container">
+            <div class="drop-down">
+                <div id="login">
+                    <div>
+                        <h2>Login</h2>
+                    </div>
+                    <a href="#" id="closeBtn">
+                        <i class="fa-solid fa-xmark" style="color: black;"></i> <span>Close</span>
+                    </a>
+                </div>
+            </div>
+            <div id="form-container">
+                <form action="">
+                    <div class="input-wrapper">
+                        <label for="email">Email Address or Phone Number</label> <br>
+                        <input type="text" placeholder="Enter email address or phone number">
+                    </div><br>
+                    <div class="input-wrapper">
+                        <label for="password">Password</label> <br>
+                        <input type="text" placeholder="Enter Password">
+                    </div> <br>
+                    <div class="input-wrapper">
+                        <input type="button" value="Login">
+                    </div>
+                    <div id="hr">
+                        <hr>
+                        <span class="circle">OR</span>
+                    </div>
+                    <div id="btn-link">
+                        <input type="button" value="Login with Google">
+                        <input type="button" value="Login with Apple">
+                    </div>
+                </form>
+            </div>
+        </div>
+     </div>
+    <!-- navbar section ends here -->
+     <!-- sort section starts here -->
+    <div id="phonesTablet">
+        <div id="phones">
+           <div id="innerPhone">
+            <p>Home > Phones and Tablets</p>
+            <h1>Phone And Tablets</h1>
+           </div>
+        </div>
+        <div id="sort">
+            <div id="sortInner">
+                <p>1-40 of 1,000 results</p>
+            </div>
+           <div id="contContainer">
+            <div id="cont">
+                <p>Sort By:</p>
+                <ul>
+                    <li>Relevance</li>
+                    <li id="remove">Price- High To Low</li>
+                    <li>Price- Low To High</li>
+                </ul>
+            </div>
+           </div>
+        </div>
+    </div>
+    <!-- sort section ends here -->
+    <!-- Browse category and products section starts here -->
+    <section id="sect">
+        <div class="browseandCategory">
+            <div id="browseCont">
+                <div id="white">
+                    <div class="browseFlex">
+                        <h3>Browse Categories</h3> 
+                        <span>--</span>
+                    </div>
+                    <ul id="tablets">
+                        <li>Mobile Phones and Accessories</li>
+                        <li>Mobile Phones</li>
+                        <li>Tablet Accessories</li>
+                        <li>Desk, Radio & Intercom Phones</li>
+                        <li>Tablets</li>
+                        <li>Phone & Tablet Bundles</li>
+                    </ul>
+                    <hr>
+                    <div class="browseFlex">
+                        <h3>Price</h3>
+                        <span>--</span>
+                    </div>
+                    <div>
+                        <div class="inputP">
+                            <input type="radio" name="" id="">
+                            <p>Under N2000</p>
+                        </div>
+                        <div class="inputP">
+                            <input type="radio" name="" id="">
+                            <p>N2000 - N5000</p>
+                        </div>
+                        <div class="inputP">
+                            <input type="radio" name="" id="">
+                            <p>N5000 - N10000</p>
+                        </div>
+                        <div class="inputP">
+                            <input type="radio" name="" id="">
+                            <p>N10000 - N20000</p>
+                        </div>
+                        <div class="inputP">
+                            <input type="radio" name="" id="">
+                            <p>N20000 - N40000</p>
+                        </div>
+                        <div class="inputP">
+                            <input type="radio" name="" id="">
+                            <p>Above N40000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="main">
+                <div id="top">
+                    <!-- image -->
+                </div>
+                <div id="productCont">
+                    <!-- dynamically insert productItem with JS -->
+                        <!-- <div class="productItem">
+                            <span class="topSpan">-9%</span>
+                            <div class="prodImg">
+                            
+                            </div>
+                            <p>Office 365 Professional</p>
+                            <div class="prodPrice">
+                                <h3>N27,778</h3>
+                                <p>N <s>46,263</s></p>
+                                <span class="prodSpan">-29%</span>
+                            </div>
+                            <p class="p">You save N11,300</p>
+                            
+                        </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Browse category and products section ends here -->
+     <div id="summary">
+        <div id="sum">
+
+        </div>
+     </div>
+
+     <script src="script.js"></script>
+     <!-- <script src="async.js"></script> -->
+</body>
+</html>

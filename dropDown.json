@@ -1,0 +1,36 @@
+{
+  "computers": {
+     "items": [
+        {
+           "title": "Laptops",
+           "details": ["Mini Laptops and Netbooks", "Notebooks", "Ultrabooks", "Hybrid PCs", "Macbooks", "PC Gaming"]
+        },
+        {
+           "title": "Desktop and Monitors",
+           "details": ["CPUs", "All In Ones", "Desktop Bundles"]
+        },
+        {
+           "title": "Computing Accessories",
+           "details": ["Computer Peripherals", "Bags, Cases, Covers & Sleeves", "Laptop & Desktop Accessories", "Storage Devices"]
+        }
+     ],
+     "image": "pictures/computing.webp"
+  },
+  "phones": {
+     "items": [
+        {
+           "title": "Mobile Phones",
+           "details": ["Lorem ipsum 1", "Lorem ipsum 2", "Lorem ipsum 3", "Lorem ipsum 4", "PC Gaming"]
+        },
+        {
+           "title": "Laptops",
+           "details": ["Lorem ipsum 1", "Lorem ipsum 2", "Lorem ipsum 3", "Lorem ipsum 4"]
+        },
+        {
+           "title": "Desktop and Monitors",
+           "details": ["Lorem ipsum 1", "Lorem ipsum 2", "Lorem ipsum 3", "Lorem ipsum 4"]
+        }
+     ],
+     "image": "pictures/itel.webp"
+  }
+}
