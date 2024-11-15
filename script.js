@@ -61,7 +61,21 @@ products
                                  <span class="prodSpan">-29%</span>
                               </div>
                               <p class="p">You save N11,300</p>
+                              <hr>
+                              <p class="soldBy">Sold by <span>Official Apple Store</span></p>
+                              <div class="ratingCont">
+                                  <div>
+                                    <i class="fa-solid fa-star" style="color: #dedede;"></i>
+                                    <i class="fa-solid fa-star" style="color: #dedede;"></i>
+                                    <i class="fa-solid fa-star" style="color: #dedede;"></i>
+                                    <i class="fa-solid fa-star" style="color: #dedede;"></i>
+                                    <i class="fa-solid fa-star" style="color: #dedede;"></i>
+                                 </div>
+                                 <p>No reviews yet</p>
+                              </div>
+                              <div class="prodBtn"><a><button>Add To Cart</button></a></div>
                            </div>`;
+
                     productCont.innerHTML = productContent;
       }
       // console.log(productItem);
