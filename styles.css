@@ -1,5 +1,19 @@
 *{
     box-sizing: border-box;
+    /* margin: 0; */
+}
+.k_services{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10%;
+}
+.k_services div{
+    width: 90px;
+    height: 30px;
+
+}
+.k_services div img{
+    width: 100%;
 }
 nav{
     background-color: #ed017f;
@@ -339,11 +353,14 @@ ul{
 .productItem .prodBtn{
     text-align: center;
 }
+.productItem hr{
+    border: solid .5px #eeeded;
+    border-bottom: none;
+}
 .productItem button{
     padding: 10px 40px;
     border: solid 1px #ed017f;
     background-color: white;
-    text-align: center;
     color: #f84ca2;
     margin: 10px 0;
     border-radius: 4px;

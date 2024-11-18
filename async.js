@@ -1,19 +1,36 @@
 
-// Object destructuring
-const person = {
-    name: "Tobi",
-    age: 55,
-    department: "Architecture"
+
+function getUsersFromInstagram(cb){
+
+    // got to db
+    // fetch al users
+
+    const users = [{name: "James"}, {name: "Peters"},{name: "James"}];
+    console.log(users)
+    console.log('all users gotten')
+
+    return users;
+    // so instead of this function to return wwith all the users, we pass the users to the callback function
+    // cb(users)
 }
 
-const {age, name, department: dept} = person;
+function seeUserPost(user){
+    // do som other codes
+    const post = [{post1: "First Post"}, {post2: "Second Post"}];
+    console.log(user,` post:`,post);
+    
+}
+console.log('getting all users');
+setTimeout(()=>{
+    const users = getUsersFromInstagram()
+    console.log(users[1])
+    const user1 = users[1].name
 
-// alias department as dept
-console.log(age);
-console.log(dept);
+    // then we want to get a a particular user and see all his posts
+    console.log('getting', user1, "post")
+    setTimeout(()=>{
 
+        seeUserPost(user1)
+    },20000)
 
-// array destructuring
-const arr = [12, 45, 56];
-const [i, j, k] = arr;
-console.log(i);
+},10000)
