@@ -2,6 +2,13 @@
     box-sizing: border-box;
     /* margin: 0; */
 }
+#gifNav{
+    width: 100%;
+}
+#gifNav img{
+    width: 100%;
+    height: 100%;
+}
 .k_services{
     display: flex;
     justify-content: space-between;
@@ -14,12 +21,13 @@
 }
 .k_services div img{
     width: 100%;
+    cursor: pointer;
 }
 nav{
     background-color: #ed017f;
     height: 80px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding: 0 20px;
 }
 
@@ -30,6 +38,7 @@ nav img{
     /* background-color: red; */
     width: 80px;
     color: white;
+    padding: 10px;
 }
 #store:hover{
     background-color: white;
@@ -40,6 +49,7 @@ nav img{
     /* background-color: blue; */
     width: 80px;
     color: white;
+    padding: 10px;
 }
 #sell:hover{
     background-color: white;
@@ -48,49 +58,81 @@ nav img{
 }
 #input{
     /* background-color: purple; */
-    width: 450px;
+    width: 600px;
+    height: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: start;
     align-items: center;
-    border: solid orange 1px;
+    /* border: solid orange 1px; */
 }
-input{
-    height: 30px;
-    width: 400px;
+#input input{
+    height: 40px;
+    width: 92%;
     outline: none;
     border: none;
     text-indent: 10px;
+    border-radius: 3px 0px 0px 3px;
+}
+#input input::placeholder{
+    /* font-size: large; */
+    font-size: 14px;
 }
 
-#input img{
-    height: 30px;
+#input .searchCont{
+    height: 40px;
+    width: 8%;
+    background-color: #fba100;
+    display: flex;
+    align-items: center;
+    border-radius: 0px 3px 3px 0px;
+    cursor: pointer;
+}
+.searchCont i{
+    width: 100%;
+    text-align: center;
 }
 #help{
     /* background-color: green; */
-    width: 80px;
+    width: 130px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 5px;
     color: white;
+    padding: 0 10px;
+}
+#help .helpIconCont{
+    background-color: #e084b2;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+ 
+}
+.helpIconCont i{
+    font-size: 15px;
 }
 #help:hover{
     background-color: white;
     color: hotpink;
     cursor: pointer;
 }
-#help img{
-    height: 20px;
+#help:hover i{
+    color: rgb(31, 27, 29);
 }
+
 #login{
     /* background-color: red; */
-    width: 80px;
+    width: 100px;
     color: white;
+    cursor: pointer;
 }
 #login a{
     color: white;
 }
-#login:hover a{
+#login:hover {
     background-color: white;
     color: hotpink;
     cursor: pointer;
@@ -101,6 +143,7 @@ input{
     align-items: center;
     justify-content: center;
     width: 150px;
+    margin-left: 15px;
 }
 
 #cart-box{
@@ -109,19 +152,21 @@ input{
     justify-content: center;
     align-items: center;
     border-radius: 8px;
-    background-color: green;
+    background-color: #33b27b;
     color: white;
     width: 150px;
     gap: 10px;
 }
-
+#cart-box:hover{
+    background-color: #18764d;
+}
 #cart-box img{
     height: 20px;
 }
 #span{
-    background-color: grey;
+    background-color: rgb(222, 216, 216);
     width: 30px;
-    height: 30px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,7 +179,10 @@ body{
 }
 #secondNav{
     display: flex;
-    background-color: brown;
+    background-color: #94004f;
+    color: white;
+    height: 50px;
+    font-size: 14px;
     /* position: relative; */
 }
 .inner{
