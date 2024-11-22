@@ -50,6 +50,7 @@ products
       // use for loop to generate/ duplicate the productItem
       for(i=0; i < value.length; i++){
          productContent += `<div class="productItem">
+                              <div class="saveProduct"><i class="fa-solid fa-heart" style="color: #ffffff;"></i></div>
                               <span class="topSpan">-9%</span>
                               <div class="prodImg">
                                  <img src=${value[i]['Product Image']} >

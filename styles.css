@@ -2,6 +2,11 @@
     box-sizing: border-box;
     /* margin: 0; */
 }
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #f5f5f5;
+}
 #gifNav{
     width: 100%;
 }
@@ -111,16 +116,20 @@ nav img{
     border-radius: 50%;
  
 }
-.helpIconCont i{
-    font-size: 15px;
+.helpIconCont .fa-question{
+    font-size: 22px;
 }
+.helpIconCont .fa-chevron-down{
+    font-size: 8px;
+}
+
 #help:hover{
     background-color: white;
     color: hotpink;
     cursor: pointer;
 }
-#help:hover i{
-    color: rgb(31, 27, 29);
+#help:hover .fa-solid{
+    color: rgb(221, 18, 119) !important;
 }
 
 #login{
@@ -151,11 +160,12 @@ nav img{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
+    border-radius: 4px;
     background-color: #33b27b;
     color: white;
     width: 150px;
     gap: 10px;
+    cursor: pointer;
 }
 #cart-box:hover{
     background-color: #18764d;
@@ -172,10 +182,6 @@ nav img{
     align-items: center;
     border-radius: 5px;
     color: white;
-}
-body{
-    padding: 0;
-    margin: 0;
 }
 #secondNav{
     display: flex;
@@ -272,9 +278,6 @@ body{
     display: flex;
     justify-content: space-between;
 }
-body{
-    background-color: #f5f5f5;
-}
 #phones{
     /* background-color: red; */
     height: 100%;
@@ -290,6 +293,9 @@ body{
 #innerPhone{
     /* background-color: aqua; */
     margin-left: 30px;
+}
+#innerPhone p .fa-chevron-right{
+    font-size: 10px;
 }
 #cont{
     /* background-color: blueviolet; */
@@ -307,7 +313,7 @@ body{
 li{
     list-style-type: none;
     font-size: 14px;
-    border: solid .5px black;
+    border: solid .5px rgb(222, 219, 219);
     padding: 5px;
 }
 ul{
@@ -317,6 +323,9 @@ ul{
     /* background-color: cadetblue; */
     display: flex;
     justify-content: end;
+}
+#contContainer .active-sort{
+    border: solid #ed017f .5px;
 }
 #sortInner p{
     font-size: 11px;
@@ -376,11 +385,20 @@ ul{
     height: 13px;
     width: 13px;
 }
+#main{
+    display: grid;
+    grid-template-rows: 250px 4fr;
+    row-gap: 20px;
+}
 #top{
     background-color: hotpink;
-    height: 200px;
-    margin-top: 40px;
-    position: absolute;
+    /* height: 200px; */
+    margin-top: 30px;
+    /* position: absolute; */
+}
+#top img{
+    height: 100%;
+    width: 100%;
 }
 #productCont{
     display: grid;
@@ -392,11 +410,35 @@ ul{
     background-color: #ffff;
     /* height: 350px; */
     width: 220px;
-    padding-top: 20px;
+    padding: 50px 0px 20px 20px;
     position: relative;
     padding-left: 10px;
     padding-right: 10px;
     /* text-align: center; */
+}
+.productItem:hover{
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+}
+.productItem .saveProduct{
+    background-color: #ededed;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5%; right: 5%;
+    padding: 8px;
+    cursor: pointer;
+}
+.productItem .saveProduct:hover{
+    background-color: #fba100;
+}
+.productItem .saveProduct i{
+    font-size: 12px;
 }
 .productItem .prodBtn{
     text-align: center;
@@ -485,7 +527,7 @@ ul{
 }
 #sum{
     margin-top: 10%;
-    background-color: #c2bfbf;
+    /* background-color: #c2bfbf; */
     height: 80%;
     width: 70%;
 }
