@@ -251,7 +251,17 @@ nav img{
     display: grid;
     grid-template-columns: 20% auto;
     /* background-color: #ed017f; */
-    height: max-content;
+    height: 70vh;
+    position: relative;
+}
+.dropDown::before{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.85);
+    position: absolute;
+    height: 30%;
+    /* width: 100vw; */
+    top: 100%;
+    left: 0; right: 0;
 }
 .dropDown .items{
     overflow-y: scroll;
@@ -327,6 +337,7 @@ nav img{
     background-color: #ffff;
     display: flex;
     justify-content: space-between;
+
 }
 #phones{
     /* background-color: red; */
