@@ -34,6 +34,7 @@ nav{
     display: flex;
     /* justify-content: space-between; */
     padding: 0 20px;
+    position: relative;
 }
 
 nav img{
@@ -59,7 +60,7 @@ nav img{
 #sell:hover{
     background-color: white;
     color: hotpink;
-    cursor: pointer;
+    cursor: pointer; 
 }
 #input{
     /* background-color: purple; */
@@ -104,7 +105,32 @@ nav img{
     align-items: center;
     gap: 5px;
     color: white;
+    cursor: pointer;
     padding: 0 10px;
+    position: relative;
+}
+.dropDown-help{
+    background-color: #ffffff;
+    color: black;
+    width: 180px;
+    position: absolute;
+    top: 100%; 
+    left: 0px;
+    display: none;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 10s ease;
+}
+.dropDown-help p{
+    font-size: small;
+    padding: 10px;
+    margin: 0;
+    /* display: none; */
+}
+.dropDown-help p:hover{
+    background-color: #ededed;
+    color: #ed017f;
 }
 #help .helpIconCont{
     background-color: #e084b2;
@@ -114,15 +140,15 @@ nav img{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    
  
 }
 .helpIconCont .fa-question{
     font-size: 22px;
 }
-.helpIconCont .fa-chevron-down{
-    font-size: 8px;
+#help .fa-chevron-down{
+    font-size: 12px;
 }
-
 #help:hover{
     background-color: white;
     color: hotpink;
@@ -131,7 +157,12 @@ nav img{
 #help:hover .fa-solid{
     color: rgb(221, 18, 119) !important;
 }
-
+#help:hover .dropDown-help{
+    display: block;
+    opacity: 1;
+    max-height: max-content;
+    transform: translateY(0);
+}
 #login{
     /* background-color: red; */
     width: 100px;
@@ -160,10 +191,11 @@ nav img{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 4px;
+    border-radius: 3px;
     background-color: #33b27b;
     color: white;
     width: 150px;
+    height: 40px;
     gap: 10px;
     cursor: pointer;
 }
@@ -175,12 +207,12 @@ nav img{
 }
 #span{
     background-color: rgb(222, 216, 216);
-    width: 30px;
-    height: 40px;
+    width: 20px;
+    height: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
+    border-radius: 4px;
     color: white;
 }
 #secondNav{
@@ -218,8 +250,8 @@ nav img{
 .dropDown{
     display: grid;
     grid-template-columns: 20% auto;
-    background-color: #ed017f;
-    height: 100vh;
+    /* background-color: #ed017f; */
+    height: max-content;
 }
 .dropDown .items{
     overflow-y: scroll;
@@ -245,6 +277,7 @@ nav img{
 }
 .left .selected{
     background-color: white;
+    color: #b1015f;
 }
 
 .items::-webkit-scrollbar{
@@ -252,19 +285,36 @@ nav img{
     width: 4px;
 }
 .right{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    /* overflow-y: scroll; */
+}
+.right .first{
     background-color: rgb(250, 252, 252);
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, max-content);
     /* grid-template-rows: 200px; */
     padding: 30px;
-    overflow-y: scroll;
+    grid-column-gap: 20px;
     grid-row-gap: 20px;
+    /* padding-right: 100px; */
 }
-.div p{
-    padding-left: 0;
+.right .second{
+    background-color: white;
+    padding: 30px 30px 0 0;
 }
-.right img{
-    height: 60%;
+.right h4{
+    margin: 0;
+}
+.para{
+    padding-left: 0px !important;
+}
+.para:hover{
+    color: #94004f;
+    /* padding-left: 5px !important; */
+}
+.right .second img{
+    height: 350px;
     width: 100%;
 }
 .left .dropDown .left p{
@@ -297,14 +347,6 @@ nav img{
 #innerPhone p .fa-chevron-right{
     font-size: 10px;
 }
-#cont{
-    /* background-color: blueviolet; */
-    height: 50%;
-    width: 80%;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-}
 #sortInner{
     /* background-color: bisque; */
     display: flex;
@@ -315,6 +357,7 @@ li{
     font-size: 14px;
     border: solid .5px rgb(222, 219, 219);
     padding: 5px;
+    cursor: pointer;
 }
 ul{
     display: flex;
@@ -326,6 +369,20 @@ ul{
 }
 #contContainer .active-sort{
     border: solid #ed017f .5px;
+}
+#cont{
+    /* background-color: blueviolet; */
+    height: 50%;
+    width: 80%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+#cont ul li{
+    font-size: 11px;
+}
+#cont p{
+    font-size: 12px;
 }
 #sortInner p{
     font-size: 11px;
@@ -380,6 +437,10 @@ ul{
     font-size: 13px;
     width: 200px;
     gap: 10px;
+    margin: 0;
+}
+.inputP p{
+    margin: 10px;
 }
 .inputP input{
     height: 13px;
@@ -403,17 +464,17 @@ ul{
 #productCont{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 10px;
+    column-gap: 5px;
     row-gap: 20px;
 }
 .productItem{
     background-color: #ffff;
     /* height: 350px; */
     width: 220px;
-    padding: 50px 0px 20px 20px;
+    padding: 50px 10px 10px 10px;
     position: relative;
-    padding-left: 10px;
-    padding-right: 10px;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
     /* text-align: center; */
 }
 .productItem:hover{
@@ -485,6 +546,9 @@ ul{
     justify-content: space-between;
     padding: 0; margin: 0;
 }
+.prodPrice h3{
+    color: #b1015f;
+}
 .prodPrice h3, 
 .prodPrice p{
     margin: 0;
@@ -533,6 +597,7 @@ ul{
 }
 #nav-section{
     position: sticky;
+    /* position: relative; */
     top: 0;
     left: 0;
     right: 0;

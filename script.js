@@ -57,7 +57,7 @@ products
                               </div>
                               <p>${value[i]['Product Name']}</p>
                               <div class="prodPrice">
-                                 <h3>N${value[i]['Product Price']}</h3>
+                                 <h3><i class="fa-solid fa-naira-sign"></i>${value[i]['Product Price']}</h3>
                                  <p>N <s>46,263</s></p>
                                  <span class="prodSpan">-29%</span>
                               </div>
@@ -382,7 +382,9 @@ products
 let allP = document.querySelectorAll('.left p');
 
 // Select the 'right' div where content will be displayed on hover
-let display = document.querySelector('.right');
+let display = document.querySelector('.right .first');
+// get the img container in the right display
+let imgCont = document.querySelector('.right .second')
 
 // Fetch content from the JSON file
 let contentData = {};
@@ -393,9 +395,24 @@ fetch('dropDown.json') //asynchronous operation
       contentData = data;  //store the data in the contentData object we defined 
       console.log(contentData);
       
+      // before loop, set the initial content to a default for computers
+allP.forEach((p)=>{
+   if(p.classList.contains('computers')){
+      console.log('FOund a computer class')
+      let content = contentData['computers'];
+      console.log(content);
+      
+      display.innerHTML = createContentHTML(content)
+   }
+   else{
+      console.log('could not find any computers class');
+      
+   }
+})
+
+      
    })
    .catch(error => console.error('Error fetching JSON:', error));
-
 
 // Loop through all <p> tags and add event listeners
 allP.forEach((p) => {
@@ -408,39 +425,59 @@ allP.forEach((p) => {
 
       // Get the content from JSON data based on class name
       const className = event.target.className.split(" ")[0];
+      event.target.style.color = '#b1015f'
       // get the values stored in our object contentData that has the key in className 
       const content = contentData[className]; 
 
       // If content is found, display it
       if (content) {
-         display.innerHTML = createContentHTML(content);
+         setTimeout(()=>{
+            display.innerHTML = createContentHTML(content);
+
+         }, 300)
       } else {
          display.innerHTML = '';
+         // content = 'computers';
+         // display.innerHTML = createContentHTML(content)
       }
    });
 
+  
    // Optionally clear content on mouse leave
    p.addEventListener('mouseleave', () => {
-      display.innerHTML = '';  // Clear display on mouse leave if desired
+      // display.innerHTML = '';  // Clear display on mouse leave if desired
+      // remove the color of the target
+      p.style.color = 'black'
    });
 });
 
 
 // Function to create HTML structure for the content
 function createContentHTML(content) {
-   // console.log(content.items);
    
    let html = '';
-   content.items.forEach(item => {
-      html += `<div class="div">
-                  <h1>${item.title}</h1>`;
-      item.details.forEach(detail => {
-         html += `<p>${detail}</p>`;
-      });
+   content.items.forEach((item)=>{
+      // let heading;
+      // let p;
+      html += `<div class"div">
+                  <h4>${item.title}</h4>`;
+
+      item.details.forEach(pText=>{
+            html += `<p class="para">${pText}</p>`;
+   })
       html += `</div>`;
-   });
-   if (content.image) {
-      html += `<div><img src="${content.image}" alt="Image"></div>`;
-   }
+  })
+  let img;
+  if(content.image){
+   img =  `<img src="${content.image}">`;
+   // call img gnerator
+   // imgCont.innerHTML = imgGenerator(img);
+   imgCont.innerHTML = img;
+   
+}
    return html;
+}
+
+function imgGenerator(img){
+
 }
