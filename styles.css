@@ -221,6 +221,7 @@ nav img{
     color: white;
     height: 50px;
     font-size: 14px;
+    /* width: 1900px; */
     /* position: relative; */
 }
 .inner{
@@ -269,7 +270,7 @@ nav img{
 .items{
     scrollbar-width: thin;
     scrollbar-color: rgb(203, 202, 202) transparent;
-    scrollbar-arrow-color: transparent;
+    /* scrollbar-arrow-color: transparent; */
 }
 .items p{
     padding: 10px;
@@ -320,7 +321,7 @@ nav img{
     padding-left: 0px !important;
 }
 .para:hover{
-    color: #94004f;
+    color: #da0f7b;
     /* padding-left: 5px !important; */
 }
 .right .second img{
@@ -330,7 +331,61 @@ nav img{
 .left .dropDown .left p{
     background-color: red;
 }
+/* style for all category with hamburger menu ends here */
 
+/* style for dropdown on second navbar starts here */
+.navDrop-wrapper{
+    position: absolute;
+    background-color: #fff;
+    top: 100%; right: 0; left: 0;
+    /* height: max-content; */
+    display: none;
+}
+.navDrop{
+    position: relative;
+    height: 70vh;
+    /* background-color: #b1015f; */
+    overflow-y: scroll;
+    /* display: grid; */
+    /* grid-template-columns: 4fr 1fr; */
+    /* text-align: center; */
+}
+.navDrop-wrapper.visible{
+    display: block;
+}
+.navDrop-wrapper::before{
+    content: '';
+    height: 30%; 
+    background-color: rgba(0, 0, 0, 0.85);
+    left: 0; right: 0; top: 100%;
+    position: absolute;
+}
+.navDrop .cont{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    /* background-color: #18764d; */
+    padding: 30px;
+    color: black;
+}
+.navDrop .cont .first{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* overflow-y: scroll; */
+}
+.cont .first h4{
+    margin: 0 !important;
+}
+.cont .first p{
+    padding-left: 0px;
+}
+.navDrop .cont .second{
+    /* background-color: #94004f; */
+}
+.cont .second img{
+    height: 350px;
+    /* height: 300%; */
+    width: 100%;
+}
 /* add the default select state for list */
 #phonesTablet{
     height: 120px;
@@ -559,6 +614,9 @@ ul{
 }
 .prodPrice h3{
     color: #b1015f;
+}
+.prodPrice h3 i{
+    font-size: 13px;
 }
 .prodPrice h3, 
 .prodPrice p{

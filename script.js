@@ -385,6 +385,7 @@ let allP = document.querySelectorAll('.left p');
 let display = document.querySelector('.right .first');
 // get the img container in the right display
 let imgCont = document.querySelector('.right .second')
+let imgContNav = document.querySelector('.cont .second')
 
 // Fetch content from the JSON file
 let contentData = {};
@@ -396,19 +397,19 @@ fetch('dropDown.json') //asynchronous operation
       console.log(contentData);
       
       // before loop, set the initial content to a default for computers
-allP.forEach((p)=>{
-   if(p.classList.contains('computers')){
-      console.log('FOund a computer class')
-      let content = contentData['computers'];
-      console.log(content);
-      
-      display.innerHTML = createContentHTML(content)
-   }
-   else{
-      console.log('could not find any computers class');
-      
-   }
-})
+      allP.forEach((p)=>{
+         if(p.classList.contains('computers')){
+            console.log('FOund a computer class')
+            let content = contentData['computers'];
+            console.log(content);
+            
+            display.innerHTML = createContentHTML(content)
+         }
+         else{
+            console.log('could not find any computers class');
+            
+         }
+      })
 
       
    })
@@ -451,7 +452,26 @@ allP.forEach((p) => {
    });
 });
 
+// loop through all the ps in the second navbar and add an event listener
+const allNavPs = document.querySelectorAll('.drp');
+const navDrop = document.querySelector('.navDrop-wrapper');
+const navInner = document.querySelector('.navDrop .first')
+allNavPs.forEach((p)=>{
+   p.addEventListener("mouseenter", (e)=>{
+      // make the display visible
+      navDrop.classList.add('visible')
+      // get the class of the p tag
+      const className = e.target.firstElementChild.className.split(' ')[0].trim();
+      console.log(`ClassName: `,className)
+      const data = contentData[className];
+      navInner.innerHTML = createContentHTML(data);
+   })
+   p.addEventListener('mouseleave', (e)=>{
+      navDrop.classList.remove('visible');
+   })
 
+   
+})
 // Function to create HTML structure for the content
 function createContentHTML(content) {
    
@@ -473,6 +493,7 @@ function createContentHTML(content) {
    // call img gnerator
    // imgCont.innerHTML = imgGenerator(img);
    imgCont.innerHTML = img;
+   imgContNav.innerHTML = img;
    
 }
    return html;
