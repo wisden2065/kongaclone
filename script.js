@@ -502,3 +502,9 @@ function createContentHTML(content) {
 function imgGenerator(img){
 
 }
+
+// get the width of the main div
+
+// const main = document.getElementById('main');
+// const width = main.getBoundingClientRect();
+// console.log('width',width)
