@@ -1,10 +1,10 @@
 [
   {
     "id": 1,
-    "Product Name": "Mackbook",
-    "Product Price": 1500000,
-    "Product category": "Laptops",
-    "Product Image": "pictures/nokia.webp"
+    "Product Name": "Apple iPhone 15 Pro",
+    "Product Price": 1450000,
+    "Product category": "Phones",
+    "Product Image": "pictures/iphone.webp"
   },
   {
     "id": 2,
@@ -209,216 +209,200 @@
     "Product category": "Accessories",
     "Product Image": "pictures/boseQC.webp"
   },
-  [
-    {
-      "id": 31,
-      "Product Name": "Sony Bravia 65' 4K TV",
-      "Product Price": 750000,
-      "Product category": "Electronics",
-      "Product Image": "pictures/sonyBravia.webp"
-    },
-    {
-      "id": 32,
-      "Product Name": "Huawei MateBook X Pro",
-      "Product Price": 1100000,
-      "Product category": "Laptops",
-      "Product Image": "pictures/huaweiMatebook.webp"
-    },
-    {
-      "id": 33,
-      "Product Name": "GoPro Hero 12",
-      "Product Price": 350000,
-      "Product category": "Cameras",
-      "Product Image": "pictures/goproHero.webp"
-    },
-    {
-      "id": 34,
-      "Product Name": "Samsung Galaxy Buds 2 Pro",
-      "Product Price": 95000,
-      "Product category": "Accessories",
-      "Product Image": "pictures/galaxyBuds.webp"
-    },
-    {
-      "id": 35,
-      "Product Name": "Oculus Quest 3",
-      "Product Price": 400000,
-      "Product category": "Gaming",
-      "Product Image": "pictures/oculusQuest.webp"
-    },
-    {
-      "id": 36,
-      "Product Name": "Dyson V12 Vacuum Cleaner",
-      "Product Price": 300000,
-      "Product category": "Home Appliances",
-      "Product Image": "pictures/dysonVacuum.webp"
-    },
-    {
-      "id": 37,
-      "Product Name": "Anker PowerCore 20000",
-      "Product Price": 25000,
-      "Product category": "Accessories",
-      "Product Image": "pictures/ankerPowerbank.webp"
-    },
-    {
-      "id": 38,
-      "Product Name": "LG 75' OLED TV",
-      "Product Price": 1200000,
-      "Product category": "Electronics",
-      "Product Image": "pictures/lgOled.webp"
-    },
-    {
-      "id": 39,
-      "Product Name": "Apple Watch Series 9",
-      "Product Price": 300000,
-      "Product category": "Accessories",
-      "Product Image": "pictures/appleWatch.webp"
-    },
-    {
-      "id": 40,
-      "Product Name": "Lenovo Yoga 9i",
-      "Product Price": 850000,
-      "Product category": "Laptops",
-      "Product Image": "pictures/lenovoYoga.webp"
-    },
-    {
-      "id": 41,
-      "Product Name": "Beats Studio Pro",
-      "Product Price": 160000,
-      "Product category": "Accessories",
-      "Product Image": "pictures/beatsPro.webp"
-    },
-    {
-      "id": 42,
-      "Product Name": "Samsung Galaxy Tab A8",
-      "Product Price": 150000,
-      "Product category": "Tablets",
-      "Product Image": "pictures/samsungTabA8.webp"
-    },
-    {
-      "id": 43,
-      "Product Name": "Roku Streaming Stick 4K",
-      "Product Price": 35000,
-      "Product category": "Electronics",
-      "Product Image": "pictures/rokuStick.webp"
-    },
-    {
-      "id": 44,
-      "Product Name": "Philips Air Fryer XXL",
-      "Product Price": 125000,
-      "Product category": "Home Appliances",
-      "Product Image": "pictures/philipsAirFryer.webp"
-    },
-    {
-      "id": 45,
-      "Product Name": "DJI Ronin-S",
-      "Product Price": 270000,
-      "Product category": "Cameras",
-      "Product Image": "pictures/djiRonin.webp"
-    },
-    {
-      "id": 46,
-      "Product Name": "Microsoft Xbox Elite Controller",
-      "Product Price": 95000,
-      "Product category": "Gaming",
-      "Product Image": "pictures/xboxEliteController.webp"
-    },
-    {
-      "id": 47,
-      "Product Name": "LG Gram 17",
-      "Product Price": 1400000,
-      "Product category": "Laptops",
-      "Product Image": "pictures/lgGram.webp"
-    },
-    {
-      "id": 48,
-      "Product Name": "Corsair K95 RGB Platinum Keyboard",
-      "Product Price": 75000,
-      "Product category": "Accessories",
-      "Product Image": "pictures/corsairKeyboard.webp"
-    },
-    {
-      "id": 49,
-      "Product Name": "Samsung Galaxy S22",
-      "Product Price": 900000,
-      "Product category": "Phones",
-      "Product Image": "pictures/galaxyS22.webp"
-    },
-    {
-      "id": 50,
-      "Product Name": "Dell Inspiron 15",
-      "Product Price": 300000,
-      "Product category": "Laptops",
-      "Product Image": "pictures/dellInspiron.webp"
-    },
-    {
-      "id": 51,
-      "Product Name": "Panasonic Lumix S5 II",
-      "Product Price": 800000,
-      "Product category": "Cameras",
-      "Product Image": "pictures/panasonicLumix.webp"
-    },
-    {
-      "id": 52,
-      "Product Name": "Sony WH-CH710N Headphones",
-      "Product Price": 85000,
-      "Product category": "Accessories",
-      "Product Image": "pictures/sonyWHCH.webp"
-    },
-    {
-      "id": 53,
-      "Product Name": "Eufy RoboVac G30",
-      "Product Price": 200000,
-      "Product category": "Home Appliances",
-      "Product Image": "pictures/eufyRoboVac.webp"
-    },
-    {
-      "id": 54,
-      "Product Name": "Razer DeathAdder V3 Mouse",
-      "Product Price": 50000,
-      "Product category": "Accessories",
-      "Product Image": "pictures/razerMouse.webp"
-    },
-    {
-      "id": 55,
-      "Product Name": "Garmin Forerunner 955",
-      "Product Price": 220000,
-      "Product category": "Accessories",
-      "Product Image": "pictures/garminWatch.webp"
-    },
-    {
-      "id": 56,
-      "Product Name": "Apple Mac Mini M2",
-      "Product Price": 500000,
-      "Product category": "Computers",
-      "Product Image": "pictures/macMini.webp"
-    },
-    {
-      "id": 57,
-      "Product Name": "Brother MFC-J995DW Printer",
-      "Product Price": 100000,
-      "Product category": "Electronics",
-      "Product Image": "pictures/brotherPrinter.webp"
-    },
-    {
-      "id": 58,
-      "Product Name": "Nintendo Switch OLED",
-      "Product Price": 200000,
-      "Product category": "Gaming",
-      "Product Image": "pictures/nintendoSwitch.webp"
-    },
-    {
-      "id": 59,
-      "Product Name": "Google Nest Hub Max",
-      "Product Price": 95000,
-      "Product category": "Electronics",
-      "Product Image": "pictures/googleNest.webp"
-    },
-    {
-      "id": 60,
-      "Product Name": "Samsung QN90B Neo QLED",
-      "Product Price": 950000,
-      "Product category": "Electronics",
-      "Product Image": "pictures/samsungQN90.webp"
-    }
-  ]
+  {
+    "id": 31,
+    "Product Name": "Sony Bravia 65' 4K TV",
+    "Product Price": 750000,
+    "Product category": "Electronics",
+    "Product Image": "pictures/sonyBravia.webp"
+  },
+  {
+    "id": 32,
+    "Product Name": "Huawei MateBook X Pro",
+    "Product Price": 1100000,
+    "Product category": "Laptops",
+    "Product Image": "pictures/huaweiMatebook.webp"
+  },
+  {
+    "id": 33,
+    "Product Name": "GoPro Hero 12",
+    "Product Price": 350000,
+    "Product category": "Cameras",
+    "Product Image": "pictures/goproHero.webp"
+  },
+  {
+    "id": 34,
+    "Product Name": "Samsung Galaxy Buds 2 Pro",
+    "Product Price": 95000,
+    "Product category": "Accessories",
+    "Product Image": "pictures/galaxyBuds.webp"
+  },
+  {
+    "id": 35,
+    "Product Name": "Oculus Quest 3",
+    "Product Price": 400000,
+    "Product category": "Gaming",
+    "Product Image": "pictures/oculusQuest.webp"
+  },
+  {
+    "id": 36,
+    "Product Name": "Dyson V12 Vacuum Cleaner",
+    "Product Price": 300000,
+    "Product category": "Home Appliances",
+    "Product Image": "pictures/dysonVacuum.webp"
+  },
+  {
+    "id": 37,
+    "Product Name": "Anker PowerCore 20000",
+    "Product Price": 25000,
+    "Product category": "Accessories",
+    "Product Image": "pictures/ankerPowerbank.webp"
+  },
+  {
+    "id": 38,
+    "Product Name": "LG 75' OLED TV",
+    "Product Price": 1200000,
+    "Product category": "Electronics",
+    "Product Image": "pictures/lgOled.webp"
+  },
+  {
+    "id": 39,
+    "Product Name": "Apple Watch Series 9",
+    "Product Price": 300000,
+    "Product category": "Accessories",
+    "Product Image": "pictures/appleWatch.webp"
+  },
+  {
+    "id": 40,
+    "Product Name": "Lenovo Yoga 9i",
+    "Product Price": 850000,
+    "Product category": "Laptops",
+    "Product Image": "pictures/lenovoYoga.webp"
+  },
+  {
+    "id": 41,
+    "Product Name": "Beats Studio Pro",
+    "Product Price": 160000,
+    "Product category": "Accessories",
+    "Product Image": "pictures/beatsPro.webp"
+  },
+  {
+    "id": 42,
+    "Product Name": "Samsung Galaxy Tab A8",
+    "Product Price": 150000,
+    "Product category": "Tablets",
+    "Product Image": "pictures/samsungTabA8.webp"
+  },
+  {
+    "id": 43,
+    "Product Name": "Roku Streaming Stick 4K",
+    "Product Price": 35000,
+    "Product category": "Electronics",
+    "Product Image": "pictures/rokuStick.webp"
+  },
+  {
+    "id": 44,
+    "Product Name": "Philips Air Fryer XXL",
+    "Product Price": 125000,
+    "Product category": "Home Appliances",
+    "Product Image": "pictures/philipsAirFryer.webp"
+  },
+  {
+    "id": 45,
+    "Product Name": "DJI Ronin-S",
+    "Product Price": 270000,
+    "Product category": "Cameras",
+    "Product Image": "pictures/djiRonin.webp"
+  },
+  {
+    "id": 46,
+    "Product Name": "Microsoft Xbox Elite Controller",
+    "Product Price": 95000,
+    "Product category": "Gaming",
+    "Product Image": "pictures/xboxEliteController.webp"
+  },
+  {
+    "id": 47,
+    "Product Name": "LG Gram 17",
+    "Product Price": 1400000,
+    "Product category": "Laptops",
+    "Product Image": "pictures/lgGram.webp"
+  },
+  {
+    "id": 48,
+    "Product Name": "Corsair K95 RGB Platinum Keyboard",
+    "Product Price": 75000,
+    "Product category": "Accessories",
+    "Product Image": "pictures/corsairKeyboard.webp"
+  },
+  {
+    "id": 49,
+    "Product Name": "Samsung Galaxy S22",
+    "Product Price": 900000,
+    "Product category": "Phones",
+    "Product Image": "pictures/galaxyS22.webp"
+  },
+  {
+    "id": 50,
+    "Product Name": "Dell Inspiron 15",
+    "Product Price": 300000,
+    "Product category": "Laptops",
+    "Product Image": "pictures/dellInspiron.webp"
+  },
+  {
+    "id": 51,
+    "Product Name": "Panasonic Lumix S5 II",
+    "Product Price": 800000,
+    "Product category": "Cameras",
+    "Product Image": "pictures/panasonicLumix.webp"
+  },
+  {
+    "id": 52,
+    "Product Name": "Sony WH-CH710N Headphones",
+    "Product Price": 85000,
+    "Product category": "Accessories",
+    "Product Image": "pictures/sonyWHCH.webp"
+  },
+  {
+    "id": 53,
+    "Product Name": "Eufy RoboVac G30",
+    "Product Price": 200000,
+    "Product category": "Home Appliances",
+    "Product Image": "pictures/eufyRoboVac.webp"
+  },
+  {
+    "id": 54,
+    "Product Name": "Razer DeathAdder V3 Mouse",
+    "Product Price": 50000,
+    "Product category": "Accessories",
+    "Product Image": "pictures/razerMouse.webp"
+  },
+  {
+    "id": 55,
+    "Product Name": "Garmin Forerunner 955",
+    "Product Price": 220000,
+    "Product category": "Accessories",
+    "Product Image": "pictures/garminWatch.webp"
+  },
+  {
+    "id": 56,
+    "Product Name": "Apple Mac Mini M2",
+    "Product Price": 500000,
+    "Product category": "Computers",
+    "Product Image": "pictures/macMini.webp"
+  },
+  {
+    "id": 57,
+    "Product Name": "Brother MFC-J995DW Printer",
+    "Product Price": 100000,
+    "Product category": "Electronics",
+    "Product Image": "pictures/brotherPrinter.webp"
+  },
+  {
+    "id": 58,
+    "Product Name": "Nintendo Switch OLED",
+    "Product Price": 200000,
+    "Product category": "Gaming",
+    "Product Image": "pictures/nintendoSwitch.webp"
+  }
 ]

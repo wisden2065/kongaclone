@@ -44,9 +44,11 @@ http.createServer((req, res)=>{
                 }) 
                 console.log(Data);
                 if(Data !== undefined){
-                    Data = Data['Product Name'];
+                    // Data = Data['Product Name'];
                     let stringData = JSON.stringify(Data);
-                    res.write(stringData)
+                    res.setHeader("Access-Control-Allow-Origin", "*")
+                    res.end(stringData);
+                    
                 }
                 else{
                     res.write("Product not found \n")
@@ -114,27 +116,43 @@ http.createServer((req, res)=>{
                         if(err){
                             console.log(err);
                         }
-                    })
+                        else{
+                            res.end(JSON.stringify(`{message: "Successfully updated  ${product['Product Name']}}`))
+                        }
+                    }) 
                 })
             }
-            else if(req.method == 'DELETE' && parsedUrl.pathname == '/products'  && parsedUrl.query.id !== undefined){
+            else if(req.method == 'DELETE' && parsedUrl.pathname == '/products'){
+                console.log(typeof data);
+
                 let productsArray = JSON.parse(data);
+                console.log(productsArray);
                 // remove prod with id passed in the url param
-                let newProductArray = productsArray.filter((prod)=>{
-                    return prod.id != parsedUrl.query.id;
+                // let newProductArray = productsArray.filter((prod)=>{
+                //     return prod.id !== parsedUrl.query.id;
+                // })
+                let prodIndex = productsArray.findIndex((prod)=>{
+                    return prod.id == parsedUrl.query.id;
                 })
 
-                products = JSON.stringify(newProductArray);
-                fs.writeFile('./product.json', products, (err)=>{
+                console.log(`Prod index: ${prodIndex}`)
+                productsArray.splice(prodIndex, 1);
+
+                console.log("...");
+                // console.log(productsArray)
+                let newProducts = JSON.stringify(productsArray);
+                fs.writeFile('./product.json', newProducts, (err)=>{
                     if(err){
                         console.log(err);
-
+                    } 
+                    else{
+                        res.end(JSON.stringify({message: 'Product successfully deleted'}))
                     }
                 })
 
             }
 
-            res.end('\nended server communication');
+            // res.end('\nended server communication');
         })
 
         
