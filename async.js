@@ -15,12 +15,15 @@ http.createServer((req, res)=>{
             // else we continue to fetching data
             const parsedUrl = url.parse(req.url, true);
             console.log(parsedUrl);
-            console.log(parsedUrl.pathname);
+            console.log("path name:", parsedUrl.pathname);
             // console.log(path.query);
-
+            res.setHeader("Access-Control-Allow-Origin", "*")
+            res.setHeader("Set-Cookie","my-cookie" )
+            res.setHeader('Access-Control-Allow-Headers', '*')
             if(req.method =='GET' && parsedUrl.pathname == '/products' && parsedUrl.query.id == undefined ){
-                res.write(data)
-                console.log('GET request')
+                console.log(res)
+                res.end(data)
+                // console.log('GET request');
             }
             else if(req.method == 'GET' && parsedUrl.pathname == '/products'  && parsedUrl.query.id !== undefined){
                 console.log('GET request with param');
@@ -36,7 +39,6 @@ http.createServer((req, res)=>{
                 //         res.write(jsonData) 
                 //     } 
                 // }
-                console.log(parsedUrl.query.id)
                 let Data = parsedData.find((product)=>{
                     // console.log(product);
                     // console.log('...')
@@ -46,7 +48,7 @@ http.createServer((req, res)=>{
                 if(Data !== undefined){
                     // Data = Data['Product Name'];
                     let stringData = JSON.stringify(Data);
-                    res.setHeader("Access-Control-Allow-Origin", "*")
+                    
                     res.end(stringData);
                     
                 }
@@ -62,6 +64,7 @@ http.createServer((req, res)=>{
                     reqData = reqData + chunk;
 
                 })
+               
                 req.on('end', ()=>{
                     let productsArray = JSON.parse(data);
                     let newProduct = JSON.parse(reqData);
@@ -75,11 +78,13 @@ http.createServer((req, res)=>{
 
                         }
                     })
-                    
-                    res.end('Successfully added new product');
+                    console.log('Skiiip')
+                    res.end(JSON.stringify(productsArray));
+                    // res.write(productsArray)
+                   
                 })
-                
-
+             
+             
             }
             else if(req.method == 'PUT' && parsedUrl.pathname == '/products'  && parsedUrl.query.id !== undefined){
                 // console.log(data);
@@ -152,7 +157,8 @@ http.createServer((req, res)=>{
 
             }
 
-            // res.end('\nended server communication');
+            // res.write('\n');
+            res.end(JSON.stringify({message: 'Ended server communication'}));
         })
 
         

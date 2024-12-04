@@ -838,21 +838,21 @@ input[type='button']{
     background-color: #0c0c0c;
     margin-top: 0;
     color: #b5b5b5;
+    /* display: flex; */
 }
-#footer-section .ash-cont{
+#ash-cont-wrapper .ash-cont{
     background-color: #2e2e2e;
     height: 30%;
     display: flex;
+    width: 95%;
+    color: #b5b5b5;
+    gap: 30px;
 }
 #ash-cont-wrapper{
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #2e2e2e;
-}
-.ash-cont{
-    width: 95%;
-    color: #b5b5b5;
-    gap: 30px;
 }
 .ash-inner{
     display: flex;
@@ -1021,7 +1021,7 @@ input[type='button']{
 /* product detail page style */
 #prod-detail-section{
     /* background-color: #18764d; */
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1041,6 +1041,7 @@ input[type='button']{
     background-color: #ffff;
     grid-template-columns: repeat(2, 1fr);
     /* z-index: 1000; */
+    padding: 0px 10px 50px 10px;
 
 }
 .prod-detail-contain .phone-contain{
@@ -1063,9 +1064,12 @@ input[type='button']{
 .thumbnail-cont .active{
     border: #fcb63a solid .3px;
 }
-.prod-shippn-info{
-    height: 100%;
-    background-color: #fff;
+
+.prod-detail hr{
+    background-color: rgb(235, 234, 234);
+    border: none;
+    height: .5px;
+    
 }
 .prod-detail-contain .prod-detail h4{
     color: #404553;
@@ -1075,6 +1079,10 @@ input[type='button']{
 .prod-detail .qty{
     display: flex;
     align-items: center;
+    padding: 10px 10px;
+}
+.prod-detail .qty ul li:nth-child(2){
+    padding: 5px 15px;
 }
 .prod-detail .bulkPurchase{
     background-color: #fef2f9;
@@ -1103,6 +1111,10 @@ input[type='button']{
     border-radius: 3px;
     font-size: medium;
     font-weight: 600;
+    cursor: pointer;
+}
+.add-to-cart button:hover{
+    background-color: #18764d;
 }
 .add-to-cart .icon-cont{
     background-color: #9b9b9b;
@@ -1124,6 +1136,13 @@ input[type='button']{
 .add-to-cart .icon-save-cont p{
     font-size: 12px;
 }
+.add-to-cart .icon-save-cont .icon-cont i{
+    font-size: large;
+}
+.add-to-cart .icon-save-cont .icon-cont:hover{
+    background-color: #fba100;
+    cursor: pointer;
+}
 .prod-detail .protect-plan{
     background-color: #fde6f2;
     width: 95%;
@@ -1138,4 +1157,94 @@ input[type='button']{
     display: flex;
     align-items: center;
     gap: 10px;
+}
+.social-icon-cont{
+    display: flex;
+    gap: 20px;
+}
+.social-icon-cont .icon-cont{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: solid .5px rgb(160, 160, 160);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#shippn-info-wrapper{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 20px;
+
+}
+.prod-shippn-info{
+    height: 100%;
+    background-color: #fff;
+}
+.prod-shippn-info hr{
+    border: none;
+    height: .5px;
+    background-color: #e3e4e5;
+}
+.prod-shippn-info .ship-cont{
+    display: flex;
+    /* align-items: center; */
+    gap: 10px;
+    padding: 20px;
+}
+.prod-shippn-info .ship-cont h4{
+    margin: 0;
+    color: #5a5f66;
+}
+.prod-shippn-info .ship-cont p{
+    margin: 0;
+    font-size: 12px;
+    color: #5a5f66;
+}
+.prod-shippn-info .ship-cont i{
+    color: #f24ea6;
+}
+#merchant-info-cont{
+    background-color: #fff;
+    padding: 20px;
+}
+#merchant-info-cont .sellerInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#merchant-info-cont .sellerInfo a{
+    background-color: #d9cef4;
+    padding: 5px;
+    border-radius: 4px;
+    color: black;
+    font-size: 12px;
+}
+#merchant-info-cont .seller{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 30px;
+}
+#merchant-info-cont .seller #userIcon{
+    background-color: #9a0052;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-weight: 500;
+    color: white;
+
+}
+#merchant-info-cont .seller #userName h1{
+    color: #644ba0;
+    margin: 0;
+    font-size: 1.2rem;
+}
+#merchant-info-cont .seller #userName p{
+    margin: 0;
+    color: #9b9b9b;
 }
