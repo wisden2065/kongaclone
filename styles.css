@@ -1041,7 +1041,7 @@ input[type='button']{
     background-color: #ffff;
     grid-template-columns: repeat(2, 1fr);
     /* z-index: 1000; */
-    padding: 0px 10px 50px 10px;
+    padding: 20px;
 
 }
 .prod-detail-contain .phone-contain{
@@ -1176,10 +1176,12 @@ input[type='button']{
     grid-template-rows: repeat(2, 1fr);
     row-gap: 20px;
 
+
 }
 .prod-shippn-info{
     height: 100%;
     background-color: #fff;
+    padding: 20px;
 }
 .prod-shippn-info hr{
     border: none;
@@ -1190,7 +1192,7 @@ input[type='button']{
     display: flex;
     /* align-items: center; */
     gap: 10px;
-    padding: 20px;
+    /* padding: 20px; */
 }
 .prod-shippn-info .ship-cont h4{
     margin: 0;
@@ -1212,6 +1214,7 @@ input[type='button']{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 15px;
 }
 #merchant-info-cont .sellerInfo a{
     background-color: #d9cef4;
@@ -1239,6 +1242,9 @@ input[type='button']{
     color: white;
 
 }
+#merchant-info-cont .seller #userName{
+    margin-bottom: 15px;
+}
 #merchant-info-cont .seller #userName h1{
     color: #644ba0;
     margin: 0;
@@ -1247,4 +1253,48 @@ input[type='button']{
 #merchant-info-cont .seller #userName p{
     margin: 0;
     color: #9b9b9b;
+}
+#merchant-record {
+    display: flex;
+    /* background-color: #fcb63a; */
+    justify-content: space-between;
+    margin: 0;
+}
+#merchant-record .sales > h4,
+#merchant-record .sales > h2,
+#merchant-record .sales > p
+{
+    margin: 0;
+}
+#merchant-record #bar-cont p{
+    margin: 0;
+    font-size: 12px;
+}
+#merchant-record #bar-cont .__bar{
+    background-color: white;
+    position: relative;
+}
+#merchant-record #bar-cont .__bar .count{
+    height: 1rem;
+    background-color: #00a311;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 5px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+#merchant-record #bar-cont .__bar .count div{
+    background-color: #33b540;
+    transform: skew(45deg);
+    height: 30px;
+    /* position: absolute; */
+    /* left: 0; top: 0; bottom: 0; right: 0; */
+
+}
+#merchant-record #bar-cont .__bar span{
+    /* width: 50%; */
+    position: absolute;
+    left: 50%;
+    font-size: 10px;
+    color: white;
 }
