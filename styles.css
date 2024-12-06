@@ -1019,7 +1019,7 @@ input[type='button']{
     color: #b5b5b5;
 }
 /* product detail page style */
-#prod-detail-section{
+.prod-detail-section{
     /* background-color: #18764d; */
     /* height: 100vh; */
     display: flex;
@@ -1297,4 +1297,62 @@ input[type='button']{
     left: 50%;
     font-size: 10px;
     color: white;
+}
+.prod-detail-section .simi-prod{
+    background-color: #fff;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.prod-detail-section .simi-prod .right{
+    background-color: rgb(87, 86, 86);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    bottom: 50%;
+    display: none;
+    cursor: pointer;
+}
+.prod-detail-section .simi-prod .right i{
+    color: white;
+}
+.prod-detail-section .simi-prod .prod-cont{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 5px;
+    /* grid-template-rows: 100%; */
+    width: 70vw;
+    height: 200px;
+}
+.simi-prod .prod-cont .prod{
+    /* background-color: teal; */
+    border-radius: 4px;
+    padding: 5px;
+    /* display: grid; */
+    /* grid-template-rows: 120px .5fr ; */
+}
+.simi-prod .prod-cont .prod:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+/* show icon on hover */
+.simi-prod .prod-cont .prod:hover .right{
+    display: flex;
+    /* display: block; */
+}
+.simi-prod .prod-cont .prod img{
+    /* height: 80%; */
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.simi-prod .prod-cont .prod h4,
+.simi-prod .prod-cont .prod p{
+    font-size: 13px;
+    margin: 0;
 }
